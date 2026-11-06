@@ -1,0 +1,36 @@
+/* --- 1. スマホ用（画面幅 767px 以下） --- */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* 画像の下に変な隙間ができるのを防ぐ */
+    margin: 10px auto; /* 画像の上下に少し余白を作る（お好みで） */
+}
+
+h1 {
+    font-size: 45px;
+}
+h1, h2, p{
+    text-align: center;
+}
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* --- 2. PC用（画面幅 768px 以上） --- */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        padding: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
